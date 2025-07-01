@@ -2,31 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Embedded Page</title>
+    <title>RStudio Cloud Embedded</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <style>
-      html, body, iframe {
+      html, body {
         height: 100%;
-        width: 100%;
         margin: 0;
         padding: 0;
         border: none;
-      }
-      body {
         overflow: hidden;
       }
       iframe {
-        display: block;
+        width: 100vw;
+        height: 100vh;
         border: none;
+        display: block;
+      }
+      .fallback {
+        display: none;
+        text-align: center;
+        margin-top: 2em;
       }
     </style>
   </head>
   <body>
     <iframe 
-      src="https://0197c6ce-ccf6-84ef-ee3c-5efc34d16496.share.connect.posit.cloud/" 
-      title="Embedded Content"
-      width="100%" 
-      height="100%">
-      <p>Your browser does not support iframes.</p>
-    </iframe>
+      src="https://0197c6ce-ccf6-84ef-ee3c-5efc34d16496.share.connect.posit.cloud/"
+      title="RStudio Cloud App"></iframe>
+    <noscript>
+      <div class="fallback">
+        <p><strong>JavaScript is required to display this content.</strong></p>
+        <p>If the embedded content does not display, <a href="https://0197c6ce-ccf6-84ef-ee3c-5efc34d16496.share.connect.posit.cloud/">click here</a> to open it in a new tab.</p>
+      </div>
+    </noscript>
   </body>
 </html>
